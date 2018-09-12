@@ -9,7 +9,7 @@ where default stack memory is set to 8192 kbytes.
 ```
 
 # To execute
-Edit the file stack_overflow.f90 and activate the call 
+Edit the file stack_overflow.f90 and activate
 *call sub_calc_stack_overflow(nlevs)*
 or 
 *call sub_calc_no_stack_overflow(nlevs)*

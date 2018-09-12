@@ -1,40 +1,28 @@
 # Ifort-Stack-Overflow
-fortran Source code which generate a stack overflow with intel fortran compiler on linux platform with default stack memory set to 8192 kbytes.
+Fortran Source code, comparable to CROCO-NH (https://github.com/ducousso/CROCO-NH), 
+which generates a "stack-overflow" with intel fortran compiler on linux platform 
+where default stack memory is set to 8192 kbytes.
 
-
-- test on XNCD1 machine
-
+# To compile
 ```
- module load intel/12.1
-```
-
-# compilation
-```
- ifort -g -c  mod_cst.f90; ifort -g -c mod_struct.f90; ifort -g -c mod_calc.f90; ifort -g -c stack_overflow.f90
+./compile.sh
 ```
 
-# Linker
-```
- ifort -g  mod_cst.o mod_struct.o mod_calc.o stack_overflow.o -o stack_overflow
-```
-
-# Submit and stack overflow
-``` 
-./stack_overflow 
-  - enter in sub_calc
-Erreur de segmentation (core dumped)
-```
-
-# Unlimited stack memory
-```
- ulimit -s unlimited
-```
+# To execute
+Edit the file stack_overflow.f90 and activate the call 
+*call sub_calc_stack_overflow(nlevs)*
+or 
+*call sub_calc_no_stack_overflow(nlevs)*
 
 ```
-./stack_overflow 
-   - enter in sub_calc
-   - exit  sub_calc      <<< No stack overflow !!!
+./stack_overflow
 ```
+
+# To clean directory to intermediate files
+```
+./clean.sh
+```
+
 
 # Memory profiling using Valgrind
 ```

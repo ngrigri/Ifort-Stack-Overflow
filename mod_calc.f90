@@ -12,7 +12,7 @@ contains
 
     integer(kind=ip) :: lev
  
-    write(*,*)'  - enter in sub_calc'
+    write(*,*)'  - enter in sub_calc_stack_overflow'
 
     do lev=1,nlevs ! 
 
@@ -23,7 +23,7 @@ contains
 
     enddo
 
-    write(*,*)'  - exit  sub_calc'
+    write(*,*)'  - exit  sub_calc_stack_overflow'
 
   end subroutine sub_calc_stack_overflow
 
@@ -31,20 +31,15 @@ contains
     integer(kind=ip), intent(in) :: nlevs
 
     integer(kind=ip) :: lev
-    integer(kind=ip), dimension(:), allocatable :: lb
-    integer(kind=ip), dimension(:), allocatable :: ub
     integer(kind=ip) :: ii, jj, kk
 
-    allocate(lb(3))
-    allocate(ub(3))
-
-    write(*,*)'  - enter in sub_calc'
+    write(*,*)'  - enter in sub_no_stack_overflow'
 
     do lev=1,nlevs ! 
 
-       do ii = lb(3),ub(3)
-          do jj = lb(2), ub(2)
-             do kk = lb(1), ub(1)
+       do ii = lbound(struct(lev)%p,dim=3), ubound(struct(lev)%p,dim=3)
+          do jj = lbound(struct(lev)%p,dim=2), ubound(struct(lev)%p,dim=2)
+             do kk = lbound(struct(lev)%p,dim=1), ubound(struct(lev)%p,dim=1)
 
                 struct(lev)%p(kk,jj,ii)      = &
                      struct(lev)%p(kk,jj,ii) + &
@@ -57,10 +52,7 @@ contains
 
     enddo
 
-    write(*,*)'  - exit  sub_calc'
-
-    deallocate(lb)
-    deallocate(ub)
+    write(*,*)'  - exit  sub_calc_no_stack_overflow'
 
   end subroutine sub_calc_no_stack_overflow
 

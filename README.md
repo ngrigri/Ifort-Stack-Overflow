@@ -3,16 +3,18 @@ Fortran Source code, comparable to CROCO-NH (https://github.com/ducousso/CROCO-N
 which generates a "stack-overflow" with intel fortran compiler on linux platform 
 where default stack memory is set to 8192 kbytes.
 
+# To select stack overflow or not
+Edit the file stack_overflow.f90 and activate
+*call sub_calc_stack_overflow(nlevs)*
+or 
+*call sub_calc_no_stack_overflow(nlevs)*
+
 # To compile
 ```
 ./compile.sh
 ```
 
 # To execute
-Edit the file stack_overflow.f90 and activate
-*call sub_calc_stack_overflow(nlevs)*
-or 
-*call sub_calc_no_stack_overflow(nlevs)*
 
 ```
 ./stack_overflow

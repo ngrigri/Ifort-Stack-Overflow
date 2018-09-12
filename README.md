@@ -36,7 +36,7 @@ Erreur de segmentation (core dumped)
    - exit  sub_calc      <<< No stack overflow !!!
 ```
 
-# Memory profilng using Valgrind
+# Memory profiling using Valgrind
 ```
  valgrind --tool=massif --stacks=yes --max-stackframe=8652800 ./stack_overflow
  ms_print massif.out.xxxxx > output_xxxxx (xxxx is the process ID)

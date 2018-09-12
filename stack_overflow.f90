@@ -39,6 +39,8 @@ program stack_overflow
 
   call sub_set_struct(nlevs)
 
-  call sub_calc(nlevs)
+!!$  call sub_calc_stack_overflow(nlevs)
+!!$
+  call sub_calc_no_stack_overflow(nlevs)
 
 end program stack_overflow

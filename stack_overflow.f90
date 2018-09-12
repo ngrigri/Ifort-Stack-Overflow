@@ -17,12 +17,20 @@ program stack_overflow
   integer(kind=ip) :: ny = 128
   integer(kind=ip) :: nz = 64
 
+  write(*,*)'Start stack_overflow'
+
+  write(*,*)'Calling  sub_allocate_struct'
   call sub_allocate_struct(nlevs, nx, ny, nz)
 
+  write(*,*)'Calling  sub_set_struct'
   call sub_set_struct(nlevs)
 
-!!$  call sub_calc_stack_overflow(nlevs)
-!!$
-  call sub_calc_no_stack_overflow(nlevs)
+  write(*,*)'Calling  sub_calc_stack_overflow'
+  call sub_calc_stack_overflow(nlevs)
+
+!!$  write(*,*)'Calling  sub_calc_no_stack_overflow'
+!!$  call sub_calc_no_stack_overflow(nlevs)
+
+  write(*,*)'Exit stack_overflow'
 
 end program stack_overflow

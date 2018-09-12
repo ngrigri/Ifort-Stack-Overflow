@@ -13,9 +13,9 @@ fortran Source code which generate a stack overflow with intel fortran compiler 
  ifort -g -c  mod_cst.f90; ifort -g -c mod_struct.f90; ifort -g -c mod_calc.f90; ifort -g -c stack_overflow.f90
  edition de liens
  ifort -g  mod_cst.o mod_struct.o mod_calc.o stack_overflow.o -o stack_overflow
-'''
+```
 
-''' 
+``` 
 ./stack_overflow 
   - enter in sub_calc
 Erreur de segmentation (core dumped)

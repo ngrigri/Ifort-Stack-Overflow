@@ -1,0 +1,275 @@
+--------------------------------------------------------------------------------
+Command:            ./stack_overflow
+Massif arguments:   --stacks=yes
+ms_print arguments: massif.out.13611
+--------------------------------------------------------------------------------
+
+
+    MB
+24.77^#                                                                       
+     |#::::::@:@:::::@:@::::::::::::::@::@:::::::::::::::::::::::::::::::::::@
+     |#::::::@:@:::::@:@::::::::::::::@::@::::                               @
+     |#::::::@:@:::::@:@::::::::::::::@::@::::                               @
+     |#::::::@:@:::::@:@::::::::::::::@::@::::                               @
+     |#::::::@:@:::::@:@::::::::::::::@::@::::                               @
+     |#::::::@:@:::::@:@::::::::::::::@::@::::                               @
+     |#::::::@:@:::::@:@::::::::::::::@::@::::                               @
+     |#::::::@:@:::::@:@::::::::::::::@::@::::                               @
+     |#::::::@:@:::::@:@::::::::::::::@::@::::                               @
+     |#::::::@:@:::::@:@::::::::::::::@::@::::                               @
+     |#::::::@:@:::::@:@::::::::::::::@::@::::                               @
+     |#::::::@:@:::::@:@::::::::::::::@::@::::                               @
+     |#::::::@:@:::::@:@::::::::::::::@::@::::                               @
+     |#::::::@:@:::::@:@::::::::::::::@::@::::                               @
+     |#::::::@:@:::::@:@::::::::::::::@::@::::                               @
+     |#::::::@:@:::::@:@::::::::::::::@::@::::                               @
+     |#::::::@:@:::::@:@::::::::::::::@::@::::                               @
+     |#::::::@:@:::::@:@::::::::::::::@::@::::                               @
+     |#::::::@:@:::::@:@::::::::::::::@::@::::                               @
+   0 +----------------------------------------------------------------------->Gi
+     0                                                                   1.021
+
+Number of snapshots: 73
+ Detailed snapshots: [1 (peak), 14, 16, 26, 28, 52, 62, 72]
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+  0              0                0                0             0            0
+  1        322,691       25,978,432       25,971,311         6,081        1,040
+99.97% (25,971,311B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->99.92% (25,958,760B) 0x409BF9: for_alloc_allocatable (in /home/grima/CROCO-NH/Ifort-Stack-Overflow/pointer_vs_allocate/stack_overflow)
+| ->33.31% (8,652,800B) 0x402910: mod_struct_mp_sub_allocate_struct_ (mod_struct.f90:28)
+| | ->33.31% (8,652,800B) 0x406173: MAIN__ (stack_overflow.f90:23)
+| |   ->33.31% (8,652,800B) 0x40226A: main (in /home/grima/CROCO-NH/Ifort-Stack-Overflow/pointer_vs_allocate/stack_overflow)
+| |     
+| ->33.31% (8,652,800B) 0x402DA6: mod_struct_mp_sub_allocate_struct_ (mod_struct.f90:29)
+| | ->33.31% (8,652,800B) 0x406173: MAIN__ (stack_overflow.f90:23)
+| |   ->33.31% (8,652,800B) 0x40226A: main (in /home/grima/CROCO-NH/Ifort-Stack-Overflow/pointer_vs_allocate/stack_overflow)
+| |     
+| ->33.31% (8,652,800B) 0x40321B: mod_struct_mp_sub_allocate_struct_ (mod_struct.f90:30)
+| | ->33.31% (8,652,800B) 0x406173: MAIN__ (stack_overflow.f90:23)
+| |   ->33.31% (8,652,800B) 0x40226A: main (in /home/grima/CROCO-NH/Ifort-Stack-Overflow/pointer_vs_allocate/stack_overflow)
+| |     
+| ->00.00% (360B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->00.05% (12,551B) in 1+ places, all below ms_print's threshold (01.00%)
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+  2      5,856,739       25,978,264       25,971,311         6,081          872
+  3     17,303,162       25,978,264       25,971,311         6,081          872
+  4     27,218,906       25,978,264       25,971,311         6,081          872
+  5     33,917,573       25,978,264       25,971,311         6,081          872
+  6     43,389,927       25,978,264       25,971,311         6,081          872
+  7     55,404,404       25,978,264       25,971,311         6,081          872
+  8     65,669,452       25,978,264       25,971,311         6,081          872
+  9     72,237,518       25,978,264       25,971,311         6,081          872
+ 10     82,910,958       25,978,264       25,971,311         6,081          872
+ 11     91,121,123       25,978,264       25,971,311         6,081          872
+ 12     98,510,263       25,978,264       25,971,311         6,081          872
+ 13    107,950,394       25,978,264       25,971,311         6,081          872
+ 14    117,047,858       25,978,264       25,971,311         6,081          872
+99.97% (25,971,311B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->99.92% (25,958,760B) 0x409BF9: for_alloc_allocatable (in /home/grima/CROCO-NH/Ifort-Stack-Overflow/pointer_vs_allocate/stack_overflow)
+| ->33.31% (8,652,800B) 0x402910: mod_struct_mp_sub_allocate_struct_ (mod_struct.f90:28)
+| | ->33.31% (8,652,800B) 0x406173: MAIN__ (stack_overflow.f90:23)
+| |   ->33.31% (8,652,800B) 0x40226A: main (in /home/grima/CROCO-NH/Ifort-Stack-Overflow/pointer_vs_allocate/stack_overflow)
+| |     
+| ->33.31% (8,652,800B) 0x402DA6: mod_struct_mp_sub_allocate_struct_ (mod_struct.f90:29)
+| | ->33.31% (8,652,800B) 0x406173: MAIN__ (stack_overflow.f90:23)
+| |   ->33.31% (8,652,800B) 0x40226A: main (in /home/grima/CROCO-NH/Ifort-Stack-Overflow/pointer_vs_allocate/stack_overflow)
+| |     
+| ->33.31% (8,652,800B) 0x40321B: mod_struct_mp_sub_allocate_struct_ (mod_struct.f90:30)
+| | ->33.31% (8,652,800B) 0x406173: MAIN__ (stack_overflow.f90:23)
+| |   ->33.31% (8,652,800B) 0x40226A: main (in /home/grima/CROCO-NH/Ifort-Stack-Overflow/pointer_vs_allocate/stack_overflow)
+| |     
+| ->00.00% (360B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->00.05% (12,551B) in 1+ places, all below ms_print's threshold (01.00%)
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 15    128,744,871       25,978,264       25,971,311         6,081          872
+ 16    143,040,901       25,978,264       25,971,311         6,081          872
+99.97% (25,971,311B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->99.92% (25,958,760B) 0x409BF9: for_alloc_allocatable (in /home/grima/CROCO-NH/Ifort-Stack-Overflow/pointer_vs_allocate/stack_overflow)
+| ->33.31% (8,652,800B) 0x402910: mod_struct_mp_sub_allocate_struct_ (mod_struct.f90:28)
+| | ->33.31% (8,652,800B) 0x406173: MAIN__ (stack_overflow.f90:23)
+| |   ->33.31% (8,652,800B) 0x40226A: main (in /home/grima/CROCO-NH/Ifort-Stack-Overflow/pointer_vs_allocate/stack_overflow)
+| |     
+| ->33.31% (8,652,800B) 0x402DA6: mod_struct_mp_sub_allocate_struct_ (mod_struct.f90:29)
+| | ->33.31% (8,652,800B) 0x406173: MAIN__ (stack_overflow.f90:23)
+| |   ->33.31% (8,652,800B) 0x40226A: main (in /home/grima/CROCO-NH/Ifort-Stack-Overflow/pointer_vs_allocate/stack_overflow)
+| |     
+| ->33.31% (8,652,800B) 0x40321B: mod_struct_mp_sub_allocate_struct_ (mod_struct.f90:30)
+| | ->33.31% (8,652,800B) 0x406173: MAIN__ (stack_overflow.f90:23)
+| |   ->33.31% (8,652,800B) 0x40226A: main (in /home/grima/CROCO-NH/Ifort-Stack-Overflow/pointer_vs_allocate/stack_overflow)
+| |     
+| ->00.00% (360B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->00.05% (12,551B) in 1+ places, all below ms_print's threshold (01.00%)
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 17    152,138,499       25,978,264       25,971,311         6,081          872
+ 18    165,135,002       25,978,264       25,971,311         6,081          872
+ 19    174,376,885       25,978,264       25,971,311         6,081          872
+ 20    183,618,775       25,978,264       25,971,311         6,081          872
+ 21    192,860,482       25,978,264       25,971,311         6,081          872
+ 22    202,102,165       25,978,264       25,971,311         6,081          872
+ 23    211,343,733       25,978,264       25,971,311         6,081          872
+ 24    220,585,620       25,978,264       25,971,311         6,081          872
+ 25    234,448,291       25,978,264       25,971,311         6,081          872
+ 26    241,379,517       25,978,264       25,971,311         6,081          872
+99.97% (25,971,311B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->99.92% (25,958,760B) 0x409BF9: for_alloc_allocatable (in /home/grima/CROCO-NH/Ifort-Stack-Overflow/pointer_vs_allocate/stack_overflow)
+| ->33.31% (8,652,800B) 0x402910: mod_struct_mp_sub_allocate_struct_ (mod_struct.f90:28)
+| | ->33.31% (8,652,800B) 0x406173: MAIN__ (stack_overflow.f90:23)
+| |   ->33.31% (8,652,800B) 0x40226A: main (in /home/grima/CROCO-NH/Ifort-Stack-Overflow/pointer_vs_allocate/stack_overflow)
+| |     
+| ->33.31% (8,652,800B) 0x402DA6: mod_struct_mp_sub_allocate_struct_ (mod_struct.f90:29)
+| | ->33.31% (8,652,800B) 0x406173: MAIN__ (stack_overflow.f90:23)
+| |   ->33.31% (8,652,800B) 0x40226A: main (in /home/grima/CROCO-NH/Ifort-Stack-Overflow/pointer_vs_allocate/stack_overflow)
+| |     
+| ->33.31% (8,652,800B) 0x40321B: mod_struct_mp_sub_allocate_struct_ (mod_struct.f90:30)
+| | ->33.31% (8,652,800B) 0x406173: MAIN__ (stack_overflow.f90:23)
+| |   ->33.31% (8,652,800B) 0x40226A: main (in /home/grima/CROCO-NH/Ifort-Stack-Overflow/pointer_vs_allocate/stack_overflow)
+| |     
+| ->00.00% (360B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->00.05% (12,551B) in 1+ places, all below ms_print's threshold (01.00%)
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 27    250,621,404       25,978,264       25,971,311         6,081          872
+ 28    264,483,891       25,978,264       25,971,311         6,081          872
+99.97% (25,971,311B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->99.92% (25,958,760B) 0x409BF9: for_alloc_allocatable (in /home/grima/CROCO-NH/Ifort-Stack-Overflow/pointer_vs_allocate/stack_overflow)
+| ->33.31% (8,652,800B) 0x402910: mod_struct_mp_sub_allocate_struct_ (mod_struct.f90:28)
+| | ->33.31% (8,652,800B) 0x406173: MAIN__ (stack_overflow.f90:23)
+| |   ->33.31% (8,652,800B) 0x40226A: main (in /home/grima/CROCO-NH/Ifort-Stack-Overflow/pointer_vs_allocate/stack_overflow)
+| |     
+| ->33.31% (8,652,800B) 0x402DA6: mod_struct_mp_sub_allocate_struct_ (mod_struct.f90:29)
+| | ->33.31% (8,652,800B) 0x406173: MAIN__ (stack_overflow.f90:23)
+| |   ->33.31% (8,652,800B) 0x40226A: main (in /home/grima/CROCO-NH/Ifort-Stack-Overflow/pointer_vs_allocate/stack_overflow)
+| |     
+| ->33.31% (8,652,800B) 0x40321B: mod_struct_mp_sub_allocate_struct_ (mod_struct.f90:30)
+| | ->33.31% (8,652,800B) 0x406173: MAIN__ (stack_overflow.f90:23)
+| |   ->33.31% (8,652,800B) 0x40226A: main (in /home/grima/CROCO-NH/Ifort-Stack-Overflow/pointer_vs_allocate/stack_overflow)
+| |     
+| ->00.00% (360B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->00.05% (12,551B) in 1+ places, all below ms_print's threshold (01.00%)
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 29    273,725,643       25,978,264       25,971,311         6,081          872
+ 30    288,454,902       25,978,264       25,971,311         6,081          872
+ 31    304,051,115       25,978,264       25,971,311         6,081          872
+ 32    315,748,421       25,978,264       25,971,311         6,081          872
+ 33    323,546,552       25,978,264       25,971,311         6,081          872
+ 34    335,243,725       25,978,264       25,971,311         6,081          872
+ 35    343,042,040       25,978,264       25,971,311         6,081          872
+ 36    350,840,122       25,978,264       25,971,311         6,081          872
+ 37    358,638,388       25,978,264       25,971,311         6,081          872
+ 38    366,436,519       25,978,264       25,971,311         6,081          872
+ 39    374,234,785       25,978,264       25,971,311         6,081          872
+ 40    382,032,967       25,978,264       25,971,311         6,081          872
+ 41    393,730,273       25,978,264       25,971,311         6,081          872
+ 42    401,528,422       25,978,264       25,971,311         6,081          872
+ 43    413,225,595       25,978,264       25,971,311         6,081          872
+ 44    428,821,808       25,978,264       25,971,311         6,081          872
+ 45    436,619,939       25,978,264       25,971,311         6,081          872
+ 46    444,418,205       25,978,264       25,971,311         6,081          872
+ 47    456,115,378       25,978,264       25,971,311         6,081          872
+ 48    463,913,509       25,978,264       25,971,311         6,081          872
+ 49    475,610,631       25,978,264       25,971,311         6,081          872
+ 50    481,144,751       25,978,264       25,971,311         6,081          872
+ 51    486,678,871       25,978,264       25,971,311         6,081          872
+ 52    492,212,940       25,978,264       25,971,311         6,081          872
+99.97% (25,971,311B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->99.92% (25,958,760B) 0x409BF9: for_alloc_allocatable (in /home/grima/CROCO-NH/Ifort-Stack-Overflow/pointer_vs_allocate/stack_overflow)
+| ->33.31% (8,652,800B) 0x402910: mod_struct_mp_sub_allocate_struct_ (mod_struct.f90:28)
+| | ->33.31% (8,652,800B) 0x406173: MAIN__ (stack_overflow.f90:23)
+| |   ->33.31% (8,652,800B) 0x40226A: main (in /home/grima/CROCO-NH/Ifort-Stack-Overflow/pointer_vs_allocate/stack_overflow)
+| |     
+| ->33.31% (8,652,800B) 0x402DA6: mod_struct_mp_sub_allocate_struct_ (mod_struct.f90:29)
+| | ->33.31% (8,652,800B) 0x406173: MAIN__ (stack_overflow.f90:23)
+| |   ->33.31% (8,652,800B) 0x40226A: main (in /home/grima/CROCO-NH/Ifort-Stack-Overflow/pointer_vs_allocate/stack_overflow)
+| |     
+| ->33.31% (8,652,800B) 0x40321B: mod_struct_mp_sub_allocate_struct_ (mod_struct.f90:30)
+| | ->33.31% (8,652,800B) 0x406173: MAIN__ (stack_overflow.f90:23)
+| |   ->33.31% (8,652,800B) 0x40226A: main (in /home/grima/CROCO-NH/Ifort-Stack-Overflow/pointer_vs_allocate/stack_overflow)
+| |     
+| ->00.00% (360B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->00.05% (12,551B) in 1+ places, all below ms_print's threshold (01.00%)
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 53    497,747,060       25,978,264       25,971,311         6,081          872
+ 54    503,281,129       25,978,264       25,971,311         6,081          872
+ 55    508,815,249       25,978,264       25,971,311         6,081          872
+ 56    514,349,369       25,978,264       25,971,311         6,081          872
+ 57    519,883,438       25,978,264       25,971,311         6,081          872
+ 58    525,417,558       25,978,264       25,971,311         6,081          872
+ 59    530,951,627       25,978,264       25,971,311         6,081          872
+ 60    536,485,747       25,978,264       25,971,311         6,081          872
+ 61    542,019,867       25,978,264       25,971,311         6,081          872
+ 62    547,553,936       25,978,264       25,971,311         6,081          872
+99.97% (25,971,311B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->99.92% (25,958,760B) 0x409BF9: for_alloc_allocatable (in /home/grima/CROCO-NH/Ifort-Stack-Overflow/pointer_vs_allocate/stack_overflow)
+| ->33.31% (8,652,800B) 0x402910: mod_struct_mp_sub_allocate_struct_ (mod_struct.f90:28)
+| | ->33.31% (8,652,800B) 0x406173: MAIN__ (stack_overflow.f90:23)
+| |   ->33.31% (8,652,800B) 0x40226A: main (in /home/grima/CROCO-NH/Ifort-Stack-Overflow/pointer_vs_allocate/stack_overflow)
+| |     
+| ->33.31% (8,652,800B) 0x402DA6: mod_struct_mp_sub_allocate_struct_ (mod_struct.f90:29)
+| | ->33.31% (8,652,800B) 0x406173: MAIN__ (stack_overflow.f90:23)
+| |   ->33.31% (8,652,800B) 0x40226A: main (in /home/grima/CROCO-NH/Ifort-Stack-Overflow/pointer_vs_allocate/stack_overflow)
+| |     
+| ->33.31% (8,652,800B) 0x40321B: mod_struct_mp_sub_allocate_struct_ (mod_struct.f90:30)
+| | ->33.31% (8,652,800B) 0x406173: MAIN__ (stack_overflow.f90:23)
+| |   ->33.31% (8,652,800B) 0x40226A: main (in /home/grima/CROCO-NH/Ifort-Stack-Overflow/pointer_vs_allocate/stack_overflow)
+| |     
+| ->00.00% (360B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->00.05% (12,551B) in 1+ places, all below ms_print's threshold (01.00%)
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 63    553,088,056       25,978,264       25,971,311         6,081          872
+ 64    558,622,125       25,978,264       25,971,311         6,081          872
+ 65    564,156,245       25,978,264       25,971,311         6,081          872
+ 66    569,690,365       25,978,264       25,971,311         6,081          872
+ 67    575,224,434       25,978,264       25,971,311         6,081          872
+ 68    580,758,554       25,978,264       25,971,311         6,081          872
+ 69    586,292,623       25,978,264       25,971,311         6,081          872
+ 70    591,826,743       25,978,264       25,971,311         6,081          872
+ 71    597,360,863       25,978,264       25,971,311         6,081          872
+ 72  1,095,783,505       25,978,312       25,971,311         6,081          920
+99.97% (25,971,311B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->99.92% (25,958,760B) 0x409BF9: for_alloc_allocatable (in /home/grima/CROCO-NH/Ifort-Stack-Overflow/pointer_vs_allocate/stack_overflow)
+| ->33.31% (8,652,800B) 0x402910: mod_struct_mp_sub_allocate_struct_ (mod_struct.f90:28)
+| | ->33.31% (8,652,800B) 0x406173: MAIN__ (stack_overflow.f90:23)
+| |   ->33.31% (8,652,800B) 0x40226A: main (in /home/grima/CROCO-NH/Ifort-Stack-Overflow/pointer_vs_allocate/stack_overflow)
+| |     
+| ->33.31% (8,652,800B) 0x402DA6: mod_struct_mp_sub_allocate_struct_ (mod_struct.f90:29)
+| | ->33.31% (8,652,800B) 0x406173: MAIN__ (stack_overflow.f90:23)
+| |   ->33.31% (8,652,800B) 0x40226A: main (in /home/grima/CROCO-NH/Ifort-Stack-Overflow/pointer_vs_allocate/stack_overflow)
+| |     
+| ->33.31% (8,652,800B) 0x40321B: mod_struct_mp_sub_allocate_struct_ (mod_struct.f90:30)
+| | ->33.31% (8,652,800B) 0x406173: MAIN__ (stack_overflow.f90:23)
+| |   ->33.31% (8,652,800B) 0x40226A: main (in /home/grima/CROCO-NH/Ifort-Stack-Overflow/pointer_vs_allocate/stack_overflow)
+| |     
+| ->00.00% (360B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->00.05% (12,551B) in 1+ places, all below ms_print's threshold (01.00%)
+

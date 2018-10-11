@@ -1,0 +1,691 @@
+desc: --stacks=yes
+cmd: ./stack_overflow
+time_unit: i
+#-----------
+snapshot=0
+#-----------
+time=0
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=1
+#-----------
+time=322691
+mem_heap_B=25971311
+mem_heap_extra_B=6081
+mem_stacks_B=1040
+heap_tree=peak
+n2: 25971311 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n4: 25958760 0x409BF9: for_alloc_allocatable (in /home/grima/CROCO-NH/Ifort-Stack-Overflow/pointer_vs_allocate/stack_overflow)
+  n1: 8652800 0x402910: mod_struct_mp_sub_allocate_struct_ (mod_struct.f90:28)
+   n1: 8652800 0x406173: MAIN__ (stack_overflow.f90:23)
+    n0: 8652800 0x40226A: main (in /home/grima/CROCO-NH/Ifort-Stack-Overflow/pointer_vs_allocate/stack_overflow)
+  n1: 8652800 0x402DA6: mod_struct_mp_sub_allocate_struct_ (mod_struct.f90:29)
+   n1: 8652800 0x406173: MAIN__ (stack_overflow.f90:23)
+    n0: 8652800 0x40226A: main (in /home/grima/CROCO-NH/Ifort-Stack-Overflow/pointer_vs_allocate/stack_overflow)
+  n1: 8652800 0x40321B: mod_struct_mp_sub_allocate_struct_ (mod_struct.f90:30)
+   n1: 8652800 0x406173: MAIN__ (stack_overflow.f90:23)
+    n0: 8652800 0x40226A: main (in /home/grima/CROCO-NH/Ifort-Stack-Overflow/pointer_vs_allocate/stack_overflow)
+  n0: 360 in 1 place, below massif's threshold (01.00%)
+ n0: 12551 in 3 places, all below massif's threshold (01.00%)
+#-----------
+snapshot=2
+#-----------
+time=5856739
+mem_heap_B=25971311
+mem_heap_extra_B=6081
+mem_stacks_B=872
+heap_tree=empty
+#-----------
+snapshot=3
+#-----------
+time=17303162
+mem_heap_B=25971311
+mem_heap_extra_B=6081
+mem_stacks_B=872
+heap_tree=empty
+#-----------
+snapshot=4
+#-----------
+time=27218906
+mem_heap_B=25971311
+mem_heap_extra_B=6081
+mem_stacks_B=872
+heap_tree=empty
+#-----------
+snapshot=5
+#-----------
+time=33917573
+mem_heap_B=25971311
+mem_heap_extra_B=6081
+mem_stacks_B=872
+heap_tree=empty
+#-----------
+snapshot=6
+#-----------
+time=43389927
+mem_heap_B=25971311
+mem_heap_extra_B=6081
+mem_stacks_B=872
+heap_tree=empty
+#-----------
+snapshot=7
+#-----------
+time=55404404
+mem_heap_B=25971311
+mem_heap_extra_B=6081
+mem_stacks_B=872
+heap_tree=empty
+#-----------
+snapshot=8
+#-----------
+time=65669452
+mem_heap_B=25971311
+mem_heap_extra_B=6081
+mem_stacks_B=872
+heap_tree=empty
+#-----------
+snapshot=9
+#-----------
+time=72237518
+mem_heap_B=25971311
+mem_heap_extra_B=6081
+mem_stacks_B=872
+heap_tree=empty
+#-----------
+snapshot=10
+#-----------
+time=82910958
+mem_heap_B=25971311
+mem_heap_extra_B=6081
+mem_stacks_B=872
+heap_tree=empty
+#-----------
+snapshot=11
+#-----------
+time=91121123
+mem_heap_B=25971311
+mem_heap_extra_B=6081
+mem_stacks_B=872
+heap_tree=empty
+#-----------
+snapshot=12
+#-----------
+time=98510263
+mem_heap_B=25971311
+mem_heap_extra_B=6081
+mem_stacks_B=872
+heap_tree=empty
+#-----------
+snapshot=13
+#-----------
+time=107950394
+mem_heap_B=25971311
+mem_heap_extra_B=6081
+mem_stacks_B=872
+heap_tree=empty
+#-----------
+snapshot=14
+#-----------
+time=117047858
+mem_heap_B=25971311
+mem_heap_extra_B=6081
+mem_stacks_B=872
+heap_tree=detailed
+n2: 25971311 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n4: 25958760 0x409BF9: for_alloc_allocatable (in /home/grima/CROCO-NH/Ifort-Stack-Overflow/pointer_vs_allocate/stack_overflow)
+  n1: 8652800 0x402910: mod_struct_mp_sub_allocate_struct_ (mod_struct.f90:28)
+   n1: 8652800 0x406173: MAIN__ (stack_overflow.f90:23)
+    n0: 8652800 0x40226A: main (in /home/grima/CROCO-NH/Ifort-Stack-Overflow/pointer_vs_allocate/stack_overflow)
+  n1: 8652800 0x402DA6: mod_struct_mp_sub_allocate_struct_ (mod_struct.f90:29)
+   n1: 8652800 0x406173: MAIN__ (stack_overflow.f90:23)
+    n0: 8652800 0x40226A: main (in /home/grima/CROCO-NH/Ifort-Stack-Overflow/pointer_vs_allocate/stack_overflow)
+  n1: 8652800 0x40321B: mod_struct_mp_sub_allocate_struct_ (mod_struct.f90:30)
+   n1: 8652800 0x406173: MAIN__ (stack_overflow.f90:23)
+    n0: 8652800 0x40226A: main (in /home/grima/CROCO-NH/Ifort-Stack-Overflow/pointer_vs_allocate/stack_overflow)
+  n0: 360 in 1 place, below massif's threshold (01.00%)
+ n0: 12551 in 3 places, all below massif's threshold (01.00%)
+#-----------
+snapshot=15
+#-----------
+time=128744871
+mem_heap_B=25971311
+mem_heap_extra_B=6081
+mem_stacks_B=872
+heap_tree=empty
+#-----------
+snapshot=16
+#-----------
+time=143040901
+mem_heap_B=25971311
+mem_heap_extra_B=6081
+mem_stacks_B=872
+heap_tree=detailed
+n2: 25971311 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n4: 25958760 0x409BF9: for_alloc_allocatable (in /home/grima/CROCO-NH/Ifort-Stack-Overflow/pointer_vs_allocate/stack_overflow)
+  n1: 8652800 0x402910: mod_struct_mp_sub_allocate_struct_ (mod_struct.f90:28)
+   n1: 8652800 0x406173: MAIN__ (stack_overflow.f90:23)
+    n0: 8652800 0x40226A: main (in /home/grima/CROCO-NH/Ifort-Stack-Overflow/pointer_vs_allocate/stack_overflow)
+  n1: 8652800 0x402DA6: mod_struct_mp_sub_allocate_struct_ (mod_struct.f90:29)
+   n1: 8652800 0x406173: MAIN__ (stack_overflow.f90:23)
+    n0: 8652800 0x40226A: main (in /home/grima/CROCO-NH/Ifort-Stack-Overflow/pointer_vs_allocate/stack_overflow)
+  n1: 8652800 0x40321B: mod_struct_mp_sub_allocate_struct_ (mod_struct.f90:30)
+   n1: 8652800 0x406173: MAIN__ (stack_overflow.f90:23)
+    n0: 8652800 0x40226A: main (in /home/grima/CROCO-NH/Ifort-Stack-Overflow/pointer_vs_allocate/stack_overflow)
+  n0: 360 in 1 place, below massif's threshold (01.00%)
+ n0: 12551 in 3 places, all below massif's threshold (01.00%)
+#-----------
+snapshot=17
+#-----------
+time=152138499
+mem_heap_B=25971311
+mem_heap_extra_B=6081
+mem_stacks_B=872
+heap_tree=empty
+#-----------
+snapshot=18
+#-----------
+time=165135002
+mem_heap_B=25971311
+mem_heap_extra_B=6081
+mem_stacks_B=872
+heap_tree=empty
+#-----------
+snapshot=19
+#-----------
+time=174376885
+mem_heap_B=25971311
+mem_heap_extra_B=6081
+mem_stacks_B=872
+heap_tree=empty
+#-----------
+snapshot=20
+#-----------
+time=183618775
+mem_heap_B=25971311
+mem_heap_extra_B=6081
+mem_stacks_B=872
+heap_tree=empty
+#-----------
+snapshot=21
+#-----------
+time=192860482
+mem_heap_B=25971311
+mem_heap_extra_B=6081
+mem_stacks_B=872
+heap_tree=empty
+#-----------
+snapshot=22
+#-----------
+time=202102165
+mem_heap_B=25971311
+mem_heap_extra_B=6081
+mem_stacks_B=872
+heap_tree=empty
+#-----------
+snapshot=23
+#-----------
+time=211343733
+mem_heap_B=25971311
+mem_heap_extra_B=6081
+mem_stacks_B=872
+heap_tree=empty
+#-----------
+snapshot=24
+#-----------
+time=220585620
+mem_heap_B=25971311
+mem_heap_extra_B=6081
+mem_stacks_B=872
+heap_tree=empty
+#-----------
+snapshot=25
+#-----------
+time=234448291
+mem_heap_B=25971311
+mem_heap_extra_B=6081
+mem_stacks_B=872
+heap_tree=empty
+#-----------
+snapshot=26
+#-----------
+time=241379517
+mem_heap_B=25971311
+mem_heap_extra_B=6081
+mem_stacks_B=872
+heap_tree=detailed
+n2: 25971311 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n4: 25958760 0x409BF9: for_alloc_allocatable (in /home/grima/CROCO-NH/Ifort-Stack-Overflow/pointer_vs_allocate/stack_overflow)
+  n1: 8652800 0x402910: mod_struct_mp_sub_allocate_struct_ (mod_struct.f90:28)
+   n1: 8652800 0x406173: MAIN__ (stack_overflow.f90:23)
+    n0: 8652800 0x40226A: main (in /home/grima/CROCO-NH/Ifort-Stack-Overflow/pointer_vs_allocate/stack_overflow)
+  n1: 8652800 0x402DA6: mod_struct_mp_sub_allocate_struct_ (mod_struct.f90:29)
+   n1: 8652800 0x406173: MAIN__ (stack_overflow.f90:23)
+    n0: 8652800 0x40226A: main (in /home/grima/CROCO-NH/Ifort-Stack-Overflow/pointer_vs_allocate/stack_overflow)
+  n1: 8652800 0x40321B: mod_struct_mp_sub_allocate_struct_ (mod_struct.f90:30)
+   n1: 8652800 0x406173: MAIN__ (stack_overflow.f90:23)
+    n0: 8652800 0x40226A: main (in /home/grima/CROCO-NH/Ifort-Stack-Overflow/pointer_vs_allocate/stack_overflow)
+  n0: 360 in 1 place, below massif's threshold (01.00%)
+ n0: 12551 in 3 places, all below massif's threshold (01.00%)
+#-----------
+snapshot=27
+#-----------
+time=250621404
+mem_heap_B=25971311
+mem_heap_extra_B=6081
+mem_stacks_B=872
+heap_tree=empty
+#-----------
+snapshot=28
+#-----------
+time=264483891
+mem_heap_B=25971311
+mem_heap_extra_B=6081
+mem_stacks_B=872
+heap_tree=detailed
+n2: 25971311 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n4: 25958760 0x409BF9: for_alloc_allocatable (in /home/grima/CROCO-NH/Ifort-Stack-Overflow/pointer_vs_allocate/stack_overflow)
+  n1: 8652800 0x402910: mod_struct_mp_sub_allocate_struct_ (mod_struct.f90:28)
+   n1: 8652800 0x406173: MAIN__ (stack_overflow.f90:23)
+    n0: 8652800 0x40226A: main (in /home/grima/CROCO-NH/Ifort-Stack-Overflow/pointer_vs_allocate/stack_overflow)
+  n1: 8652800 0x402DA6: mod_struct_mp_sub_allocate_struct_ (mod_struct.f90:29)
+   n1: 8652800 0x406173: MAIN__ (stack_overflow.f90:23)
+    n0: 8652800 0x40226A: main (in /home/grima/CROCO-NH/Ifort-Stack-Overflow/pointer_vs_allocate/stack_overflow)
+  n1: 8652800 0x40321B: mod_struct_mp_sub_allocate_struct_ (mod_struct.f90:30)
+   n1: 8652800 0x406173: MAIN__ (stack_overflow.f90:23)
+    n0: 8652800 0x40226A: main (in /home/grima/CROCO-NH/Ifort-Stack-Overflow/pointer_vs_allocate/stack_overflow)
+  n0: 360 in 1 place, below massif's threshold (01.00%)
+ n0: 12551 in 3 places, all below massif's threshold (01.00%)
+#-----------
+snapshot=29
+#-----------
+time=273725643
+mem_heap_B=25971311
+mem_heap_extra_B=6081
+mem_stacks_B=872
+heap_tree=empty
+#-----------
+snapshot=30
+#-----------
+time=288454902
+mem_heap_B=25971311
+mem_heap_extra_B=6081
+mem_stacks_B=872
+heap_tree=empty
+#-----------
+snapshot=31
+#-----------
+time=304051115
+mem_heap_B=25971311
+mem_heap_extra_B=6081
+mem_stacks_B=872
+heap_tree=empty
+#-----------
+snapshot=32
+#-----------
+time=315748421
+mem_heap_B=25971311
+mem_heap_extra_B=6081
+mem_stacks_B=872
+heap_tree=empty
+#-----------
+snapshot=33
+#-----------
+time=323546552
+mem_heap_B=25971311
+mem_heap_extra_B=6081
+mem_stacks_B=872
+heap_tree=empty
+#-----------
+snapshot=34
+#-----------
+time=335243725
+mem_heap_B=25971311
+mem_heap_extra_B=6081
+mem_stacks_B=872
+heap_tree=empty
+#-----------
+snapshot=35
+#-----------
+time=343042040
+mem_heap_B=25971311
+mem_heap_extra_B=6081
+mem_stacks_B=872
+heap_tree=empty
+#-----------
+snapshot=36
+#-----------
+time=350840122
+mem_heap_B=25971311
+mem_heap_extra_B=6081
+mem_stacks_B=872
+heap_tree=empty
+#-----------
+snapshot=37
+#-----------
+time=358638388
+mem_heap_B=25971311
+mem_heap_extra_B=6081
+mem_stacks_B=872
+heap_tree=empty
+#-----------
+snapshot=38
+#-----------
+time=366436519
+mem_heap_B=25971311
+mem_heap_extra_B=6081
+mem_stacks_B=872
+heap_tree=empty
+#-----------
+snapshot=39
+#-----------
+time=374234785
+mem_heap_B=25971311
+mem_heap_extra_B=6081
+mem_stacks_B=872
+heap_tree=empty
+#-----------
+snapshot=40
+#-----------
+time=382032967
+mem_heap_B=25971311
+mem_heap_extra_B=6081
+mem_stacks_B=872
+heap_tree=empty
+#-----------
+snapshot=41
+#-----------
+time=393730273
+mem_heap_B=25971311
+mem_heap_extra_B=6081
+mem_stacks_B=872
+heap_tree=empty
+#-----------
+snapshot=42
+#-----------
+time=401528422
+mem_heap_B=25971311
+mem_heap_extra_B=6081
+mem_stacks_B=872
+heap_tree=empty
+#-----------
+snapshot=43
+#-----------
+time=413225595
+mem_heap_B=25971311
+mem_heap_extra_B=6081
+mem_stacks_B=872
+heap_tree=empty
+#-----------
+snapshot=44
+#-----------
+time=428821808
+mem_heap_B=25971311
+mem_heap_extra_B=6081
+mem_stacks_B=872
+heap_tree=empty
+#-----------
+snapshot=45
+#-----------
+time=436619939
+mem_heap_B=25971311
+mem_heap_extra_B=6081
+mem_stacks_B=872
+heap_tree=empty
+#-----------
+snapshot=46
+#-----------
+time=444418205
+mem_heap_B=25971311
+mem_heap_extra_B=6081
+mem_stacks_B=872
+heap_tree=empty
+#-----------
+snapshot=47
+#-----------
+time=456115378
+mem_heap_B=25971311
+mem_heap_extra_B=6081
+mem_stacks_B=872
+heap_tree=empty
+#-----------
+snapshot=48
+#-----------
+time=463913509
+mem_heap_B=25971311
+mem_heap_extra_B=6081
+mem_stacks_B=872
+heap_tree=empty
+#-----------
+snapshot=49
+#-----------
+time=475610631
+mem_heap_B=25971311
+mem_heap_extra_B=6081
+mem_stacks_B=872
+heap_tree=empty
+#-----------
+snapshot=50
+#-----------
+time=481144751
+mem_heap_B=25971311
+mem_heap_extra_B=6081
+mem_stacks_B=872
+heap_tree=empty
+#-----------
+snapshot=51
+#-----------
+time=486678871
+mem_heap_B=25971311
+mem_heap_extra_B=6081
+mem_stacks_B=872
+heap_tree=empty
+#-----------
+snapshot=52
+#-----------
+time=492212940
+mem_heap_B=25971311
+mem_heap_extra_B=6081
+mem_stacks_B=872
+heap_tree=detailed
+n2: 25971311 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n4: 25958760 0x409BF9: for_alloc_allocatable (in /home/grima/CROCO-NH/Ifort-Stack-Overflow/pointer_vs_allocate/stack_overflow)
+  n1: 8652800 0x402910: mod_struct_mp_sub_allocate_struct_ (mod_struct.f90:28)
+   n1: 8652800 0x406173: MAIN__ (stack_overflow.f90:23)
+    n0: 8652800 0x40226A: main (in /home/grima/CROCO-NH/Ifort-Stack-Overflow/pointer_vs_allocate/stack_overflow)
+  n1: 8652800 0x402DA6: mod_struct_mp_sub_allocate_struct_ (mod_struct.f90:29)
+   n1: 8652800 0x406173: MAIN__ (stack_overflow.f90:23)
+    n0: 8652800 0x40226A: main (in /home/grima/CROCO-NH/Ifort-Stack-Overflow/pointer_vs_allocate/stack_overflow)
+  n1: 8652800 0x40321B: mod_struct_mp_sub_allocate_struct_ (mod_struct.f90:30)
+   n1: 8652800 0x406173: MAIN__ (stack_overflow.f90:23)
+    n0: 8652800 0x40226A: main (in /home/grima/CROCO-NH/Ifort-Stack-Overflow/pointer_vs_allocate/stack_overflow)
+  n0: 360 in 1 place, below massif's threshold (01.00%)
+ n0: 12551 in 3 places, all below massif's threshold (01.00%)
+#-----------
+snapshot=53
+#-----------
+time=497747060
+mem_heap_B=25971311
+mem_heap_extra_B=6081
+mem_stacks_B=872
+heap_tree=empty
+#-----------
+snapshot=54
+#-----------
+time=503281129
+mem_heap_B=25971311
+mem_heap_extra_B=6081
+mem_stacks_B=872
+heap_tree=empty
+#-----------
+snapshot=55
+#-----------
+time=508815249
+mem_heap_B=25971311
+mem_heap_extra_B=6081
+mem_stacks_B=872
+heap_tree=empty
+#-----------
+snapshot=56
+#-----------
+time=514349369
+mem_heap_B=25971311
+mem_heap_extra_B=6081
+mem_stacks_B=872
+heap_tree=empty
+#-----------
+snapshot=57
+#-----------
+time=519883438
+mem_heap_B=25971311
+mem_heap_extra_B=6081
+mem_stacks_B=872
+heap_tree=empty
+#-----------
+snapshot=58
+#-----------
+time=525417558
+mem_heap_B=25971311
+mem_heap_extra_B=6081
+mem_stacks_B=872
+heap_tree=empty
+#-----------
+snapshot=59
+#-----------
+time=530951627
+mem_heap_B=25971311
+mem_heap_extra_B=6081
+mem_stacks_B=872
+heap_tree=empty
+#-----------
+snapshot=60
+#-----------
+time=536485747
+mem_heap_B=25971311
+mem_heap_extra_B=6081
+mem_stacks_B=872
+heap_tree=empty
+#-----------
+snapshot=61
+#-----------
+time=542019867
+mem_heap_B=25971311
+mem_heap_extra_B=6081
+mem_stacks_B=872
+heap_tree=empty
+#-----------
+snapshot=62
+#-----------
+time=547553936
+mem_heap_B=25971311
+mem_heap_extra_B=6081
+mem_stacks_B=872
+heap_tree=detailed
+n2: 25971311 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n4: 25958760 0x409BF9: for_alloc_allocatable (in /home/grima/CROCO-NH/Ifort-Stack-Overflow/pointer_vs_allocate/stack_overflow)
+  n1: 8652800 0x402910: mod_struct_mp_sub_allocate_struct_ (mod_struct.f90:28)
+   n1: 8652800 0x406173: MAIN__ (stack_overflow.f90:23)
+    n0: 8652800 0x40226A: main (in /home/grima/CROCO-NH/Ifort-Stack-Overflow/pointer_vs_allocate/stack_overflow)
+  n1: 8652800 0x402DA6: mod_struct_mp_sub_allocate_struct_ (mod_struct.f90:29)
+   n1: 8652800 0x406173: MAIN__ (stack_overflow.f90:23)
+    n0: 8652800 0x40226A: main (in /home/grima/CROCO-NH/Ifort-Stack-Overflow/pointer_vs_allocate/stack_overflow)
+  n1: 8652800 0x40321B: mod_struct_mp_sub_allocate_struct_ (mod_struct.f90:30)
+   n1: 8652800 0x406173: MAIN__ (stack_overflow.f90:23)
+    n0: 8652800 0x40226A: main (in /home/grima/CROCO-NH/Ifort-Stack-Overflow/pointer_vs_allocate/stack_overflow)
+  n0: 360 in 1 place, below massif's threshold (01.00%)
+ n0: 12551 in 3 places, all below massif's threshold (01.00%)
+#-----------
+snapshot=63
+#-----------
+time=553088056
+mem_heap_B=25971311
+mem_heap_extra_B=6081
+mem_stacks_B=872
+heap_tree=empty
+#-----------
+snapshot=64
+#-----------
+time=558622125
+mem_heap_B=25971311
+mem_heap_extra_B=6081
+mem_stacks_B=872
+heap_tree=empty
+#-----------
+snapshot=65
+#-----------
+time=564156245
+mem_heap_B=25971311
+mem_heap_extra_B=6081
+mem_stacks_B=872
+heap_tree=empty
+#-----------
+snapshot=66
+#-----------
+time=569690365
+mem_heap_B=25971311
+mem_heap_extra_B=6081
+mem_stacks_B=872
+heap_tree=empty
+#-----------
+snapshot=67
+#-----------
+time=575224434
+mem_heap_B=25971311
+mem_heap_extra_B=6081
+mem_stacks_B=872
+heap_tree=empty
+#-----------
+snapshot=68
+#-----------
+time=580758554
+mem_heap_B=25971311
+mem_heap_extra_B=6081
+mem_stacks_B=872
+heap_tree=empty
+#-----------
+snapshot=69
+#-----------
+time=586292623
+mem_heap_B=25971311
+mem_heap_extra_B=6081
+mem_stacks_B=872
+heap_tree=empty
+#-----------
+snapshot=70
+#-----------
+time=591826743
+mem_heap_B=25971311
+mem_heap_extra_B=6081
+mem_stacks_B=872
+heap_tree=empty
+#-----------
+snapshot=71
+#-----------
+time=597360863
+mem_heap_B=25971311
+mem_heap_extra_B=6081
+mem_stacks_B=872
+heap_tree=empty
+#-----------
+snapshot=72
+#-----------
+time=1095783505
+mem_heap_B=25971311
+mem_heap_extra_B=6081
+mem_stacks_B=920
+heap_tree=detailed
+n2: 25971311 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n4: 25958760 0x409BF9: for_alloc_allocatable (in /home/grima/CROCO-NH/Ifort-Stack-Overflow/pointer_vs_allocate/stack_overflow)
+  n1: 8652800 0x402910: mod_struct_mp_sub_allocate_struct_ (mod_struct.f90:28)
+   n1: 8652800 0x406173: MAIN__ (stack_overflow.f90:23)
+    n0: 8652800 0x40226A: main (in /home/grima/CROCO-NH/Ifort-Stack-Overflow/pointer_vs_allocate/stack_overflow)
+  n1: 8652800 0x402DA6: mod_struct_mp_sub_allocate_struct_ (mod_struct.f90:29)
+   n1: 8652800 0x406173: MAIN__ (stack_overflow.f90:23)
+    n0: 8652800 0x40226A: main (in /home/grima/CROCO-NH/Ifort-Stack-Overflow/pointer_vs_allocate/stack_overflow)
+  n1: 8652800 0x40321B: mod_struct_mp_sub_allocate_struct_ (mod_struct.f90:30)
+   n1: 8652800 0x406173: MAIN__ (stack_overflow.f90:23)
+    n0: 8652800 0x40226A: main (in /home/grima/CROCO-NH/Ifort-Stack-Overflow/pointer_vs_allocate/stack_overflow)
+  n0: 360 in 1 place, below massif's threshold (01.00%)
+ n0: 12551 in 3 places, all below massif's threshold (01.00%)
